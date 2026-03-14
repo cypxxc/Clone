@@ -7,7 +7,7 @@ return [
      * Shared translations.
      *
      */
-    'title'  => 'FreeScout Installer',
+    'title'  => 'Clone test Installer',
     'next'   => 'Next Step',
     'back'   => 'Previous',
     'finish' => 'Install',
@@ -22,7 +22,7 @@ return [
      */
     'welcome' => [
         'templateTitle' => 'Welcome',
-        'title'         => 'FreeScout Installer',
+        'title'         => 'Clone test Installer',
         'message'       => 'Easy Installation and Setup Wizard.',
         'next'          => 'Check Requirements',
     ],
@@ -175,7 +175,7 @@ return [
      *
      */
     'installed' => [
-        'success_log_message' => 'FreeScout Installer successfully INSTALLED on ',
+        'success_log_message' => 'Clone test Installer successfully INSTALLED on ',
     ],
 
     /*
@@ -205,7 +205,7 @@ return [
          * Shared translations.
          *
          */
-        'title' => 'FreeScout Updater',
+        'title' => 'Clone test Updater',
 
         /*
          *
@@ -240,7 +240,7 @@ return [
         ],
 
         'log' => [
-            'success_message' => 'FreeScout Installer successfully UPDATED on ',
+            'success_message' => 'Clone test Installer successfully UPDATED on ',
         ],
     ],
 ];

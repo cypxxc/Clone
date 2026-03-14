@@ -1,6 +1,6 @@
-# ระบบแจ้งซ่อม IT - เขตสุขภาพที่ 7
+# Clone test
 
-ระบบแจ้งซ่อม IT สำหรับเขตสุขภาพที่ 7 สร้างจาก FreeScout (Helpdesk & Shared Inbox)
+Clone test - ระบบจัดการ Helpdesk และ Shared Inbox พัฒนาจาก FreeScout
 
 ## คำอธิบาย
 
