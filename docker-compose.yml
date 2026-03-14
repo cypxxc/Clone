@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  freescout:
+    image: freescout/freescout:latest
+    container_name: freescout-th7
+    ports:
+      - "8000:80"
+    environment:
+      - APP_NAME=ระบบแจ้งซ่อม IT - เขตสุขภาพที่ 7
+      - APP_URL=http://localhost:8000
+      - APP_TIMEZONE=Asia/Bangkok
+      - DB_CONNECTION=mysql
+      - DB_HOST=mysql
+      - DB_DATABASE=freescout_th7
+      - DB_USERNAME=freescout
+      - DB_PASSWORD=secure_password
+    volumes:
+      - freescout_storage:/var/www/html/storage
+      - freescout_public:/var/www/html/public
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:5.7
+    container_name: freescout-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password
+      - MYSQL_DATABASE=freescout_th7
+      - MYSQL_USER=freescout
+      - MYSQL_PASSWORD=secure_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  freescout_storage:
+  freescout_public:
+  mysql_data:
